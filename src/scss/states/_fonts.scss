@@ -1,0 +1,65 @@
+// FONT-FAMILY
+
+@include each-property($font-families, font-family);
+
+// FONT-WEIGHT
+@each $breakpoint in map-keys($grid-breakpoints) {
+	@include media-breakpoint-up($breakpoint) {
+    	$infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+    	.fs#{$infix}-12 {font-size: rem(12);}
+		.fs#{$infix}-14 {font-size: rem(14);}
+		.fs#{$infix}-16 {font-size: rem(16);}
+		.fs#{$infix}-18 {font-size: rem(18);}
+		.fs#{$infix}-20 {font-size: rem(20);}
+		.fs#{$infix}-22 {font-size: rem(22);}
+		.fs#{$infix}-24 {font-size: rem(24);}
+		.fs#{$infix}-28 {font-size: rem(28);}
+		.fs#{$infix}-30 {font-size: rem(30);}
+		.fs#{$infix}-32 {font-size: rem(32);}
+		.fs#{$infix}-34 {font-size: rem(34);}
+		.fs#{$infix}-36 {font-size: rem(36);}
+		.fs#{$infix}-40 {font-size: rem(40);}
+		.fs#{$infix}-42 {font-size: rem(42);}
+		.fs#{$infix}-45 {font-size: rem(45);}
+		.fs#{$infix}-50 {font-size: rem(50);}
+		.fs#{$infix}-55 {font-size: rem(55);}
+		.fs#{$infix}-60 {font-size: rem(60);}
+		.fs#{$infix}-65 {font-size: rem(65);}
+		.fs#{$infix}-70 {font-size: rem(70);}
+		.fs#{$infix}-80 {font-size: rem(80);}
+		.fs#{$infix}-90 {font-size: rem(90);}
+		.fs#{$infix}-96 {font-size: rem(96);}
+		.fs#{$infix}-120 {font-size: rem(120);}
+	}
+}
+
+// line-height
+@each $breakpoint in map-keys($grid-breakpoints) {
+	@include media-breakpoint-up($breakpoint) {
+    	$infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+    	.lh#{$infix}-24 {line-height: rem(24);}
+    	.lh#{$infix}-30 {line-height: rem(30);}
+    	.lh#{$infix}-45 {line-height: rem(45);}
+    	.lh#{$infix}-128 {line-height: rem(128);}
+	}
+}
+.font-merriweather {
+	font-family: 'Merriweather';
+}
+.font-weight{
+	&-700{
+		font-weight: bold;
+	}
+	&-600{
+		font-weight: 600;
+	}
+	&-500{
+		font-weight: 500;
+	}
+	&-400{
+		font-weight: 400;
+	}
+	&-300 {
+		font-weight: 300;
+	}
+}

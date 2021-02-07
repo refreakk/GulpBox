@@ -1,0 +1,26 @@
+@mixin placeholder {
+	&::-webkit-input-placeholder { @content; }
+	&:-moz-placeholder           { @content; }
+	&::-moz-placeholder          { @content; }
+	&:-ms-input-placeholder      { @content; }
+}
+
+
+@mixin square($size) {
+	width:$size;
+	height:$size;
+}
+
+
+// EACH PROPERTY
+@mixin each-property($colors, $property) {
+	@each $key, $color in $colors {
+	    // $index: index($colors, ($key $color));
+	    .#{$property}-#{$key} {
+	        #{$property}: $color;
+	    }
+	}
+}
+
+// @include each-property($colors, 'color');
+

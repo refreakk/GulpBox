@@ -1,0 +1,14 @@
+mixin mainMenu(menuClassList)
+	- var curPage = currentPage == 'index' ? '' : currentPage + '.html';
+	.l-header.d-flex.align-items-center.justify-content-between
+		a(href='index.html' class=currentPage == 'index' ? 'event-none' : '').c-logo
+			img(src= baseDir + 'images/logo.svg' alt='logo')
+		nav.c-main-nav.d-none.d-lg-block
+			ul.c-main-nav__list.d-flex
+				li.main-nav__item(class= curPage == "about.html" ? 'active' : '')
+					a(href="about.html") help
+			input(type="text" placeholder="Search").c-search__input
+		.c-burger.d-block.d-lg-none
+			span
+			span
+			span

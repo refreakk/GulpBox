@@ -1,0 +1,2 @@
+@include each-property($colors, 'color');
+@include each-property($colors, 'background-color');

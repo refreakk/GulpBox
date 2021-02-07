@@ -1,0 +1,25 @@
+mixin footer
+	.row
+		.col-12.col-md-4.col-lg-2.d-flex.flex-md-column.justify-content-lg-between.justify-content-center.justify-content-md-start
+			a(href="#").mb-30.mb-lg-0.px-65.px-md-0
+				img(src="images/footer/logo-footer.svg", alt="")
+			.c-copyright.fs-14.d-none.d-md-block
+				| © Financial Market<br>Participants Auditor. 2020
+		.col-12.offset-lg-1.col-md-4.pr-0.mt-n5
+			.c-title-block.fs-18.fs-md-20.font-weight-bold.mb-30.text-center.text-md-left !{footerText.title[lang]}
+			ul.position-relative
+				li.d-flex.pl-md-35.mb-25.flex-column.flex-md-row
+					img(src="images/footer/target.svg", alt="").c-icon-footer.mb-10.mb-lg-0
+					a(href="#").color-default.fs-16.text-center.text-md-left 728 Dooley Branch, Beckershire,<br class="d-xl-none">LA 63598-2909
+				li.d-flex.align-items.center.pl-md-35.mb-25.flex-column.flex-md-row
+					img(src=`${baseDir}images/footer/email.svg`, alt="").c-icon-footer.mb-10.mb-lg-0
+					a(href="mailto:info@fmpre.com").color-default.fs-16.text-center.text-md-left info@fmpre.com
+				li.d-flex.align-items.center.pl-md-35.flex-column.flex-md-row.mb-10.mb-lg-0.mb-35.mb-lg-0
+					img(src="images/footer/phone.svg", alt="").c-icon-footer.mb-10.mb-lg-0
+					a(href="tel:+38 098 002 85 58").color-default.fs-16.text-center.text-md-left +38 098 002 85 58
+		.col-12.offset-lg-1.col-md-4
+			a(href="sertification.html").c-btn.c-btn__footer.py-15.d-block.mb-20= menuItemText.addcertification[lang]
+			a(href="addproject.html").c-btn.c-btn__footer.py-15.d-block.mb-20= menuItemText.fileclaim[lang]
+			a(href="contacts.html").c-btn.c-btn__footer.py-15.d-block= menuItemText.contacts[lang]
+			.c-copyright.fs-14.d-block.d-md-none.text-center.mt-45
+				| © Financial Market Participants Auditor. 2020

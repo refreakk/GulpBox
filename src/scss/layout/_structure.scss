@@ -1,0 +1,22 @@
+html{
+	font-size: $main-font-size;
+} 
+html, 
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	line-height: 1.25;
+} 
+body {
+	font-size: rem(16px);
+	color: #000;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: 0;
+	box-sizing: border-box;
+}

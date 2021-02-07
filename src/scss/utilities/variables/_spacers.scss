@@ -1,0 +1,40 @@
+$spacer: 1rem !default;
+$spacers: () !default;
+$spacers: map-merge(
+  (
+    0: 0,
+    5: ($spacer * .5), // 5px // *10
+    10: ($spacer * 1), // 10 px
+    15: ($spacer * 1.5), // 15 px
+    20: ($spacer * 2), // 20 px
+    25: ($spacer * 2.5), // 25 px
+    30: ($spacer * 3), // 30 px
+    35: ($spacer * 3.5), // 35 px
+    40: ($spacer * 4), // 40 px
+    45: ($spacer * 4.5), // 45 px
+    50: ($spacer * 5), // 45 px
+    55: ($spacer * 5.5), // 55 px
+    60: ($spacer * 6), // 60 px
+    65: ($spacer * 6.5), // 65 px
+    70: ($spacer * 7), // 70 px
+    75: ($spacer * 7.5), // 75 px
+    80: ($spacer * 8), // 80 px
+    85: ($spacer * 8.5), // 85 px
+    90: ($spacer * 9), // 90 px
+    95: ($spacer * 9.5), // 95 px
+    100: ($spacer * 10), // 100 px
+    105: ($spacer * 10.5), // 105 px
+    110: ($spacer * 11), // 110 px
+    115: ($spacer * 11.5), // 115 px
+    120: ($spacer * 12), // 120 px
+    125: ($spacer * 12.5), // 125 px
+    130: ($spacer * 13), // 130 px
+    135: ($spacer * 13.5), // 135 px
+    150: ($spacer * 15), // 150 px
+    160: ($spacer * 16), // 160 px
+    230: ($spacer * 23), // 230 px
+    300: ($spacer * 30), // 300 px
+    305: ($spacer * 30.5), // 300 px
+  ),
+  $spacers
+);

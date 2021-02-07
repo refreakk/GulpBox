@@ -1,0 +1,30 @@
+extends pug/base
+
+append vars
+	- lang = "en"
+	- title = 'Index'
+	- currentPage = "index"
+	- baseDir = lang == "en" ? baseDir : "../"
+	// - baseDir = "../"
+	- meta.viewport = "width=device-width, initial-scale=1"
+	- link.appleTouchIcon180x180 = baseDir + "favicon/apple-touch-icon.png"
+	- link.icon16x16 = baseDir + "favicon/favicon.png"
+	- link.icon32x32 = baseDir + "favicon/favicon.png"
+	- link.manifest = baseDir + "favicon/site.webmanifest"
+	- link.maskIcon.href = baseDir + "favicon/safari-pinned-tab.svg"
+	- link.maskIcon.color = "#5bbad5"
+	- meta.msapplicationTileColor = "#da532c"
+	- meta.themeColor = "#ffffff"
+block head-start
+	
+block content
+	-	var menuClassListDesctop = ["main-nav-wrapper_desktop"]
+	-	var menuClassListMobile = ["main-nav-wrapper_mobile"]
+	-	var newsClasses = []
+	-	var advantagesClasses = []
+	-	var awardsClasses = []
+	-	var benefitsClasses = ["section-benefits"]
+	header
+		.container
+			h1 Hello
+			h2 It's refreak

@@ -1,0 +1,42 @@
+mixin callback
+	.callback-popup.popup.mfp-hide#callback
+		h2.main-h2.main-h2_callback= contactsText.h2_callback[lang]
+		form.callback-form#contact-callback-form(method="post")
+			.form-item
+				label.input-wrapper.input-wrapper_user
+					span.label-form !{contactsText.placeholderName[lang]}
+					input.form-input(type="text" required name="first_name" minlength="2" maxlength="30" placeholder= contactsText.labelName[lang])
+			.form-item
+				label.input-wrapper.input-wrapper_user
+					span.label-form !{contactsText.placeholderLastName[lang]}
+					input.form-input(type="text" required name="last_name" minlength="2" maxlength="30" placeholder= contactsText.labelLastName[lang])
+			.form-item
+				label.input-wrapper.input-wrapper_phone
+					span.label-form !{contactsText.placeholderPhone[lang]}
+					input.form-input(type="tel" required name="phone_number" minlength="2" maxlength="50" placeholder= contactsText.labelLastPhone[lang])
+			.form-item
+				label.input-wrapper.input-wrapper_email
+					span.label-form !{contactsText.placeholderMail[lang]}
+					input.form-input(type="email" required name="email" placeholder= contactsText.labelLastMail[lang])
+			.form-item.select-custom-wrapper.select-wrapper-country
+				span.label-form !{contactsText.placeholderCountry[lang]}
+				select#select-country.custom-select(name="country" data-placeholder= contactsText.labelCountry[lang])
+					option
+			.form-item.select-custom-wrapper.select-custom-wrapper_required.select-wrapper-lang
+				span.label-form !{contactsText.placeholderLanguage[lang]}
+				select#select-lang.custom-select(required name="language" data-placeholder= contactsText.labelLanguage[lang])
+					option
+					option(value="EN") English
+					option(value="RU") Русский
+					option(value="ES") Español
+					option(value="DE") Deutsch
+					option(value="FR") Français
+					option(value="IT") Italiano
+					option(value="ZH") 中文
+			.form-item.form-item_time
+				label.input-wrapper.input-wrapper_time
+					span.label-form !{contactsText.placeholderTime[lang]}
+					input.form-input(type="text" name="time_to_call" minlength="2" maxlength="50" placeholder= contactsText.labelTime[lang])
+			input(type="hidden" name="name_page" value="Контакты")
+			button.btn.btn-submit(type="submit") !{buttonText.btnCallback[lang]}
+		.help-text !{contactsText.text_required[lang]}
